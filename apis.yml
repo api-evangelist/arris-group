@@ -1,0 +1,7 @@
+aid: arris-group
+url: https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/apis.yml
+modified: '2026-03-23'
+apis: []
+common:
+  - type: Website
+    url: https://www.arris-group.com
