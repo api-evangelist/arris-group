@@ -1,7 +1,12 @@
 aid: arris-group
-url: https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.arris-group.com
+description: >-
+  ARRIS Group is a global telecommunications equipment company that provides entertainment
+  and communications solutions including broadband, video, and wireless products for
+  service providers and consumers.
