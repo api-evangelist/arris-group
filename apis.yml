@@ -42,6 +42,8 @@ apis:
       - type: Documentation
         url: https://www.commscope.com/solutions/
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/arris
   - type: Portal
     url: https://www.commscope.com/
     title: CommScope Website (formerly ARRIS)
