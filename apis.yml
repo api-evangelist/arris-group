@@ -36,7 +36,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arris-group.png
 access: 3rd-Party
 created: '2024-12-03'
-modified: '2026-04-19'
+modified: '2026-09-07'
 description: >-
   ARRIS Group was a global telecommunications equipment company providing
   entertainment and communications solutions including broadband, video, and
@@ -48,14 +48,23 @@ description: >-
   operators, telcos, and internet service providers worldwide.
 apis:
   - aid: arris-group:commscope-api
-    name: CommScope Developer API
+    name: ARRIS Group Developer Surface
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     description: >-
-      CommScope (formerly ARRIS) provides API and integration capabilities for
-      network infrastructure management, including tools for managing broadband
-      devices, DOCSIS networks, and cable plant equipment through their
-      CommScope NBASE-T Alliance and related technology platforms.
+      ARRIS Group publishes no API. The entry is retained to record the measurement: probed
+      2026-09-07, no OpenAPI, Swagger, AsyncAPI, GraphQL SDL, MCP endpoint, agent card or
+      Postman collection was found on any host this record names, and no ARRIS developer host
+      (developer.arris.com, api.arris.com, support.arris.com) resolves in DNS. ARRIS stopped
+      being an independent publisher when CommScope acquired it in 2019; arris.com now 301s to
+      www.vistancenetworks.com. The network APIs people associate with this brand — RUCKUS One,
+      SmartZone, ICX RESTCONF, RUCKUS IoT on api.ruckus.cloud — are CommScope contracts and are
+      profiled under the commscope-holding record, not duplicated here.
     humanURL: https://www.commscope.com/
-    baseURL: https://www.commscope.com
+    x-base-url: >-
+      Deliberately absent. The only candidate any source names is https://www.commscope.com,
+      which repair-api-bases.py flags as docs-host / no-usable-base — it is a marketing site,
+      not an API host. Recording it as a baseURL would assert a callable ARRIS endpoint that
+      does not exist.
     tags:
       - Telecommunications
       - Broadband
@@ -65,6 +74,8 @@ apis:
       - type: Documentation
         url: https://www.commscope.com/solutions/
 common:
+  - type: Website
+    url: https://www.commscope.com/
   - type: DomainSecurity
     url: security/arris-group-domain-security.yml
   - url: https://www.commscope.com/blog/rss/
@@ -80,6 +91,12 @@ common:
   - type: Support
     url: https://www.commscope.com/support/
     title: Support
+  - type: GitHubOrganization
+    url: https://github.com/ARRIS-Group
+    title: ARRIS-Group on GitHub
+  - type: LLMsTxt
+    url: llms/arris-group-llms.txt
+    title: llms.txt for ARRIS Group
   - type: Features
     data:
       - name: DOCSIS Technology
@@ -127,3 +144,31 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 specificationVersion: '0.23'
+x-enrichment:
+  date: '2026-09-07'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    ARRIS Group stopped existing as a publisher in 2019 when CommScope absorbed it, and the
+    trail ends twice more since: CommScope sold the ex-ARRIS Home Networks unit to Vantiva in
+    2023 and renamed itself Vistance Networks in January 2026, so arris.com and arrisi.com now
+    301 straight to www.vistancenetworks.com while developer.arris.com, api.arris.com and
+    support.arris.com return NXDOMAIN.
+  evidence:
+    - url: https://www.arris.com/
+      status: 301
+    - url: https://www.commscope.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.commscope.com/openapi.json
+      status: 404
+    - url: https://www.vistancenetworks.com/.well-known/agent-card.json
+      status: 404
+    - url: https://github.com/ARRIS-Group
+      status: 200
+  checked: '2026-09-07'
+x-parent: commscope-holding
+x-relationship: acquisition

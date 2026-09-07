@@ -1,0 +1,66 @@
+generated: '2026-09-07'
+method: searched
+source: >-
+  registry.npmjs.org search API, pypi.org/pypi/<name>/json, api.github.com/orgs/<name> and
+  api.github.com/orgs/ARRIS-Group/repos, probed 2026-09-07
+provider: ARRIS Group
+providerId: arris-group
+description: >-
+  First-party client-library search for ARRIS Group. ARRIS never shipped a public API client
+  library, and the company stopped existing as an independent publisher in 2019 when CommScope
+  acquired it. Every ARRIS-named package on npm is third-party — hobbyist tooling that talks to
+  ARRIS consumer modems and gateways, not an ARRIS SDK — so nothing here is marked official and
+  no SDKs pointer is emitted.
+package_count: 0
+packages: []
+registries_probed:
+  - registry: npm
+    query: 'arris, commscope, surfboard, ruckus'
+    result: no first-party package
+  - registry: pypi
+    query: 'arris, arris-sdk, commscope, ruckus'
+    result: >-
+      arris / arris-sdk / commscope all 404. pypi.org/project/ruckus/ exists (0.0.8, author
+      Samuel Loomis) but is an unrelated RKHS/scikit-learn library, not RUCKUS Networks.
+  - registry: github
+    query: 'orgs arris, arris-group, arrisgroup, commscope, vistancenetworks'
+    result: >-
+      github.com/ARRIS-Group is a real first-party ARRIS organization (created 2015-11-12,
+      2 public repos, last activity 2020-09-15) but publishes no client library or API contract
+      — DVB_SI_Parser_V_1.0 (C++ DVB service-information parser) and a fork of llvm-project
+      with Xtensa patches. Wired into apis.yml as GitHubOrganization.
+rejected_third_party:
+  - name: '@borfast/arrispwgen'
+    registry: npm
+    version: 6.0.2
+    published: '2026-07-16'
+    reason: >-
+      Community "Arris Password of the Day" generator for ARRIS modem admin recovery. Author
+      is borfast, not ARRIS/CommScope.
+  - name: '@borfast/arrispwgen-cli'
+    registry: npm
+    version: 6.0.0
+    published: '2026-07-19'
+    reason: CLI wrapper around the same community password-of-the-day generator.
+  - name: '@chriskinsman/arris-status'
+    registry: npm
+    version: 1.0.0
+    published: '2020-06-02'
+    reason: Scrapes the ARRIS cable-modem status page. Screen-scraper, not an API client, not first-party.
+  - name: arrispwod
+    registry: npm
+    version: 1.1.0
+    published: '2020-04-11'
+    reason: Third-party ARRIS password-of-day generator.
+  - name: vodafone-station
+    registry: npm
+    version: 1.1.0
+    published: '2023-04-04'
+    reason: >-
+      Third-party wrapper for the Vodafone Station, which happens to be an ARRIS TG3442DE
+      device. Targets a carrier's CPE, not an ARRIS API.
+  - name: arris
+    registry: npm
+    version: 0.0.9
+    published: '2017-10-18'
+    reason: Name collision — a generic web-crawling tool, unrelated to ARRIS Group.

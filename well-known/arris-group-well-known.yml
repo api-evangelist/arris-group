@@ -1,0 +1,168 @@
+generated: '2026-09-07'
+method: probed
+source: live HTTPS probes of every host this record names (apis.yml Website/Portal/baseURL) plus the successor host arris.com now redirects to
+provider: ARRIS Group
+providerId: arris-group
+description: >-
+  Closed-list /.well-known and root discovery probe. ARRIS Group has not existed as an
+  operating company since CommScope acquired it in 2019; arris.com and arrisi.com now 301 to
+  www.vistancenetworks.com (CommScope's own January 2026 rebrand after selling Connectivity
+  and Cable Solutions to Amphenol). No ARRIS-branded developer host resolves in DNS. Every
+  named path was probed on all three reachable hosts and every one returned 404 with an HTML
+  error page. No pointer is emitted: a recorded absence is data, not a served surface.
+hit_count: 0
+path_echo_control: passed
+notes:
+  - Negative control /.well-known/arris-group-negative-control-7f3ab91c.json returned 404 on
+    every host, so none of these hosts is a path-echoing catch-all and the 404s are real.
+  - developer.arris.com, api.arris.com, support.arris.com and surfboard.arris.com do not
+    resolve in DNS (NXDOMAIN), so there is no ARRIS developer host left to probe.
+hosts:
+  - host: www.arris.com
+    note: >-
+      Every path 301s to the same path on www.vistancenetworks.com; www.arris.com itself
+      serves no document. Statuses below are the un-followed responses from the ARRIS host.
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 301
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 301
+        file: null
+      - path: /.well-known/api-catalog
+        status: 301
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 301
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 301
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 301
+        file: null
+      - path: /.well-known/agent.json
+        status: 301
+        file: null
+      - path: /.well-known/ucp.json
+        status: 301
+        file: null
+      - path: /.well-known/acp.json
+        status: 301
+        file: null
+      - path: /.well-known/apis.json
+        status: 301
+        file: null
+      - path: /apis.json
+        status: 301
+        file: null
+      - path: /apis.yml
+        status: 301
+        file: null
+  - host: www.commscope.com
+    note: >-
+      The acquirer host this record has always pointed at. Serves an HTML 404 page for every
+      discovery path; content-type text/html, 15,596 bytes, identical on all paths and on the
+      negative control.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/ucp.json
+        status: 404
+        file: null
+      - path: /.well-known/acp.json
+        status: 404
+        file: null
+      - path: /.well-known/apis.json
+        status: 404
+        file: null
+      - path: /apis.json
+        status: 404
+        file: null
+      - path: /apis.yml
+        status: 404
+        file: null
+      - path: /.well-known/arris-group-negative-control-7f3ab91c.json
+        status: 404
+        file: null
+  - host: www.vistancenetworks.com
+    note: >-
+      Where arris.com now lands. Probed because a redirect target is where an ARRIS-era
+      document would have to live if one survived. Serves an HTML 404 page for every path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/ucp.json
+        status: 404
+        file: null
+      - path: /.well-known/acp.json
+        status: 404
+        file: null
+      - path: /.well-known/apis.json
+        status: 404
+        file: null
+      - path: /apis.json
+        status: 404
+        file: null
+      - path: /apis.yml
+        status: 404
+        file: null
+      - path: /.well-known/arris-group-negative-control-7f3ab91c.json
+        status: 404
+        file: null

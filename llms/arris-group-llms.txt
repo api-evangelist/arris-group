@@ -1,0 +1,45 @@
+# ARRIS Group
+
+> ARRIS Group was a global telecommunications equipment company — broadband, video and
+> wireless products for cable operators, telcos and ISPs. It is no longer an operating
+> company. CommScope acquired ARRIS in 2019; CommScope sold the former ARRIS Home Networks
+> business to Vantiva in 2023; and in January 2026 CommScope closed the sale of its
+> Connectivity and Cable Solutions unit to Amphenol and renamed itself Vistance Networks.
+> arris.com and arrisi.com now 301 to www.vistancenetworks.com. ARRIS Group publishes no
+> developer portal, no API reference and no machine-readable contract, and no ARRIS
+> developer host resolves in DNS.
+
+## Status
+
+- Company status: absorbed. Acquired by CommScope in 2019; brand retired.
+- Developer surface: none. No OpenAPI, AsyncAPI, GraphQL SDL, MCP server, agent card,
+  Postman collection or SDK was found on any host this record names.
+- Successor developer surface: the live CommScope / RUCKUS APIs (RUCKUS One, SmartZone,
+  ICX RESTCONF, IoT) belong to CommScope Holding and are profiled separately by
+  API Evangelist at https://apis.io/provider/commscope-holding/ — they are NOT ARRIS
+  contracts and are deliberately not duplicated here.
+
+## Sites
+
+- [CommScope (acquirer site this record points at)](https://www.commscope.com/)
+- [CommScope solutions](https://www.commscope.com/solutions/)
+- [CommScope support](https://www.commscope.com/support/)
+- [CommScope blog](https://www.commscope.com/blog/)
+- [ARRIS on LinkedIn](https://www.linkedin.com/company/arris)
+- [ARRIS-Group on GitHub](https://github.com/ARRIS-Group)
+
+## Artifacts
+
+- [apis.yml — the API Evangelist index for ARRIS Group](https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/apis.yml)
+- [Well-known discovery probe (all paths 404/301, negative control passed)](https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/well-known/arris-group-well-known.yml)
+- [Package / SDK search (zero first-party libraries)](https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/packages/arris-group-packages.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/security/arris-group-domain-security.yml)
+- [Plans and pricing (none published)](https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/plans/arris-group-plans-pricing.yml)
+- [Rate limits (none published)](https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/rate-limits/arris-group-rate-limits.yml)
+
+## Notes for agents
+
+- There is nothing here to call. Do not construct a base URL from commscope.com — it is a
+  marketing site, not an API host.
+- If you are looking for the network APIs people associate with the ARRIS brand, go to
+  CommScope Holding / RUCKUS (api.ruckus.cloud, docs.ruckus.cloud), not to ARRIS.

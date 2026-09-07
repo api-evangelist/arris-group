@@ -4,10 +4,10 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: ARRIS Group
 providerId: arris-group
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-04'
+modified: '2026-09-07'
+generated: '2026-09-07'
+method: searched
+source: https://www.commscope.com/
 tags:
   - Telecommunications
   - Broadband
@@ -16,78 +16,23 @@ tags:
   - Networking
   - Equipment
   - Rate Limiting
-  - Quotas
-  - Throttling
-description: Machine-readable rate limit definitions for the ARRIS Group API surface. Captures per-tier
-  quotas, burst behavior, response signaling, and recovery semantics. Defaults are scaffold values to
-  be replaced with published provider limits.
-headers:
-  limit: X-RateLimit-Limit
-  remaining: X-RateLimit-Remaining
-  reset: X-RateLimit-Reset
-  retryAfter: Retry-After
-  policy: RateLimit-Policy
-responseCodes:
-  throttled: 429
-  quotaExceeded: 429
-  serviceUnavailable: 503
-limits:
-  - tier: free
-    name: Free Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 10
-    burst: 20
-    timeFrame: minute
-    applies:
-      - CommScope Developer API
-  - tier: free
-    name: Free Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 1000
-    timeFrame: month
-    applies:
-      - CommScope Developer API
-  - tier: professional
-    name: Professional Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 100
-    burst: 200
-    timeFrame: minute
-    applies:
-      - CommScope Developer API
-  - tier: professional
-    name: Professional Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 100000
-    timeFrame: month
-    applies:
-      - CommScope Developer API
-  - tier: enterprise
-    name: Enterprise Negotiated Limit
-    scope: contract
-    metric: requests_per_minute
-    limit: 1000
-    burst: 5000
-    timeFrame: minute
-    applies:
-      - CommScope Developer API
-policies:
-  - name: Backoff Strategy
-    description: Clients should implement exponential backoff with jitter, honoring the Retry-After header
-      when present.
-  - name: Burst Handling
-    description: Short bursts above the steady-state limit are tolerated up to the documented burst ceiling
-      before throttling engages.
-  - name: Quota Reset
-    description: Monthly quotas reset at the start of each calendar month in UTC. Per-minute and per-second
-      windows reset on a sliding-window basis.
-  - name: Fair Use
-    description: Even on uncapped enterprise tiers, sustained usage that materially impacts shared infrastructure
-      may be subject to fair-use throttling.
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+description: >-
+  ARRIS Group publishes no rate limits. This file previously carried a bulk-sweep scaffold
+  (2026-05-04) asserting X-RateLimit-* response headers, a 429 exhaustion code and tiered
+  10/100/1000 rpm limits for a "CommScope Developer API" — none of which ARRIS ever
+  published, and none of which could be observed because there is no callable ARRIS host.
+  Those fabricated values have been removed. ARRIS has not been an operating company since
+  CommScope acquired it in 2019. An honest zero.
+limit_count: 0
+limits: []
+headers: {}
+evidence:
+  - url: https://www.commscope.com/
+    status: 200
+    note: Acquirer marketing site; no developer documentation stating limits.
+  - url: https://www.arris.com/
+    status: 301
+    note: Redirects to https://www.vistancenetworks.com/ — no ARRIS developer surface survives.
+  - url: https://www.commscope.com/openapi.json
+    status: 404
+    note: No contract to read limits from; no live endpoint to observe headers on.
