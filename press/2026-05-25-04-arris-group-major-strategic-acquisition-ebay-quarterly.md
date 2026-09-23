@@ -1,7 +1,9 @@
 ---
 title: ARRIS Group Major Strategic Acquisition, eBay Quarterly ...
 url: https://www.gurufocus.com/news/332164/arris-group-major-strategic-acquisition-ebay-quarterly-profit-above-consensus?mobile=true%3Fmobile%3Dtrue&mobile=true%3Fmobile%3Dtrue%3Fmobile%3Dtrue&mobile=true&mobile=true
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"ARRIS Group" press release artificial intelligence'
 position: 4
 source: serpapi-google

@@ -1,7 +1,9 @@
 ---
 title: Will Comcast Abandon ARRIS Group for Apple?
 url: https://www.fool.com/investing/general/2014/03/24/will-comcast-abandon-arris-group-for-apple.aspx
-date: '2026-05-25'
+published: '2014-03-24'
+date_basis: url-derived
+harvested: '2026-05-25'
 query: '"ARRIS Group" press release artificial intelligence'
 position: 3
 source: serpapi-google

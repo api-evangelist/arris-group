@@ -1,7 +1,9 @@
 ---
 title: Arris Wins 4K STB Deal With Altice
 url: https://www.lightreading.com/network-technology/arris-wins-4k-stb-deal-with-altice
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"ARRIS Group" press release artificial intelligence'
 position: 5
 source: serpapi-google
