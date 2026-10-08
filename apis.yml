@@ -74,6 +74,12 @@ apis:
       - type: Documentation
         url: https://www.commscope.com/solutions/
 common:
+  - type: Plans
+    url: plans/arris-group-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/arris-group-rate-limits.yml
+  - type: FinOps
+    url: finops/arris-group-finops.yml
   - type: Website
     url: https://www.commscope.com/
   - type: DomainSecurity
