@@ -1,4 +1,4 @@
-# ARRIS Group (arris-group)
+# ARRIS Group
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,66 +66,103 @@
 
 ARRIS Group was a global telecommunications equipment company providing entertainment and communications solutions including broadband, video, and wireless products for service providers and consumers. ARRIS was acquired by CommScope in 2019, combining their broadband technology expertise with CommScope's infrastructure solutions. The combined company offers cable modem equipment, set-top boxes, network infrastructure, DOCSIS technology, and related telecommunications hardware and software platforms for cable operators, telcos, and internet service providers worldwide.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/arris-group/refs/heads/main/apis.yml)
+**Areas:** Telecommunications · Broadband · Cable · Video · Networking · Equipment
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## ARRIS Group on APIs.io
 
-## Tags:
+Everything profiled for ARRIS Group is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/arris-group/](https://apis.io/providers/arris-group/)** — or go straight to one of the APIs or properties below.
 
- - Telecommunications, Broadband, Cable, Video, Networking, Equipment
+### APIs (1)
 
-## Timestamps
+- [ARRIS Group Developer Surface](https://apis.io/apis/arris-group/commscope-api/) — ARRIS Group publishes no API. The entry is retained to record the measurement: probed 2026-09-07, no OpenAPI, Swagger, AsyncAPI, GraphQL SDL, MCP endpoint,…
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### CommScope Developer API
-CommScope (formerly ARRIS) provides API and integration capabilities for network infrastructure management, including tools for managing broadband devices, DOCSIS networks, and cable plant equipment through their CommScope NBASE-T Alliance and related technology platforms.
+#### Security (1)
 
-**Human URL:** [https://www.commscope.com/](https://www.commscope.com/)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Arris Group Domain Security](https://apis.io/security/arris-group/arris-group-domain-security/)
 
- - Telecommunications, Broadband, Network Management, DOCSIS
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
+- [Arris Group Plans Pricing](https://apis.io/plans/arris-group/arris-group-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Arris Group Rate Limits](https://apis.io/rate-limits/arris-group/arris-group-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Arris Group Finops](https://apis.io/finops/arris-group/arris-group-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.commscope.com/)
 - [Documentation](https://www.commscope.com/solutions/)
-
-## Common Properties
-
-- [CommScope Website (formerly ARRIS)](https://www.commscope.com/)
-- [Solutions](https://www.commscope.com/solutions/)
 - [Support](https://www.commscope.com/support/)
+- [Blog](https://www.commscope.com/blog/rss/)
+- [GitHub](https://github.com/ARRIS-Group)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| DOCSIS Technology | ARRIS/CommScope provides Data Over Cable Service Interface Specification (DOCSIS) technology enabling high-speed internet over cable infrastructure, including DOCSIS 3.1 and 3.0 modems and gateways. |
-| Set-Top Box Platform | Advanced set-top box products for cable operators enabling video delivery, content access, and interactive television services. |
-| Network Infrastructure Management | Software platforms for managing broadband access networks, including CMTS (Cable Modem Termination System) management and network analytics. |
-| CCAP Architecture | Converged Cable Access Platform technology converging CMTS and video-on-demand processing into a single platform. |
+**Kin Score 9.7** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 0.0 |
 
-| Name | Description |
-|------|-------------|
-| Broadband Network Deployment | Cable operators use ARRIS/CommScope equipment to deploy and manage broadband internet infrastructure for residential and business customers. |
-| Video Service Delivery | Television service providers use ARRIS set-top boxes and headend equipment to deliver linear and on-demand video content to subscribers. |
-| Network Operations | Network operations teams use management software to monitor, configure, and troubleshoot broadband access networks and cable plant equipment. |
+**Agent readiness 2.5** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| DOCSIS Standards | ARRIS equipment integrates with CableLabs DOCSIS standards for interoperability across cable plant vendors and operators. |
-| SCTE Standards | Integration with Society of Cable Telecommunications Engineers (SCTE) standards for cable network operations and maintenance. |
+**Regulatory alignment 5.0** — Telecommunications
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/arris-group/](https://apis.io/providers/arris-group/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ARRIS Group: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/arris-group/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
